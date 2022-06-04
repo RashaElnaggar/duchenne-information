@@ -1,0 +1,112 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.box-content{
+    
+}
+
+body{
+    font-family: 'poppins';
+    text-align: center;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+header{
+    width:100%;
+    height:100px;
+    background: #c0392b;
+    position:fixed;
+}
+.logo{
+    width: 30%;
+    float: left;
+    text-align: left;
+    line-height: 100px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'pacifico';
+    color: #fff;
+}
+nav{
+    float: right;
+    line-height: 100px;
+}
+ a {
+    position:relative;
+    text-decoration: none;
+    font-family: 'poppins';
+    letter-spacing: 4px;
+    font-size: 20px;
+    color: #fff;
+    padding: 0px 10px;
+    margin:0 1px;
+    font-weight: 500;
+}
+a::after{
+content: ""; 
+position: absolute;
+background-color: #b4ff3c;
+height: 3px;
+width: 0;
+left:0;
+
+
+}
+ a:hover{
+    background-color: rgb(241, 238, 248);
+    color: #130f40;
+  
+}
+a:hover::after{
+    color: #fff;
+    transition: 0.3s;
+}
+
+.banner-area{
+    background-image: url(./images/banner.jpg);
+    background-size: cover;
+    background-position: center center;top: 100px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+
+}
+.banner-area ::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:#130f40 ;
+    opacity: .7;
+    z-index: -1;
+}
+.banner-area h2{
+    padding-top: 8%;
+    font-size: 80px;
+    color :#fff ;
+}
+.content-area{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background: #fff;
+    top: 600px;
+
+}
+content-area h2{
+    font-size: 40px;
+    margin: 0;
+    padding-top: 30px;
+    letter-spacing: 4px;
+
+}
+
