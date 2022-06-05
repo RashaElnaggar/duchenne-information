@@ -3,21 +3,23 @@
     margin: 0;
     padding: 0;
 }
-.box-content{
+/*.box-content{
    padding:0 1em;
    max-width: 60rem; 
-   margin: 0 auto;
-   border:2px solid red;
+   margin: 0 ;
 
-}
+
+}*/
 
 body{
     font-family: 'poppins';
     text-align: center;
+    margin: 0;
 }
 .wrapper{
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    height: 500vh;
+    margin: 0 ;
 }
 header{
     width:100%;
@@ -37,21 +39,35 @@ header{
     font-family: 'pacifico';
     color: #fff;
 }
-nav{
-    float: right;
-    line-height: 100px;
+h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
 }
- a {
+.topnav{
+    float: none;
+    line-height: 100px;
+    width: auto;
+}
+#rightsidebar{
+width:auto;
+float: right;
+}
+.topnav a {
     position:relative;
     text-decoration: none;
     font-family: 'poppins';
     letter-spacing: 4px;
-    font-size: 20px;
+    font-size: 17px;
     color: #fff;
     padding: 0px 10px;
     margin:0 1px;
     font-weight: 500;
 }
+.topnav a.active{
+background-color: #04AA6D;
+color: #fff;
+}
+
 a::after{
 content: ""; 
 position: absolute;
@@ -76,7 +92,7 @@ a:hover::after{
     background-image: url(./images/banner.jpg);
     background-size: cover;
     background-position: center center;top: 100px;
-    height: 100vh;
+    height:80vh;
     width: 100%;
     position: fixed;
 
@@ -114,3 +130,7 @@ content-area h2{
 
 }
 
+
+@media only screen(max-width=600px){
+   #rightsidebar{width:200px;float:left;} 
+}
